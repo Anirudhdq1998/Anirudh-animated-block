@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "telex/animated-section",
+  "version": "0.1.0",
+  "title": "Animated Section",
+  "category": "design",
+  "icon": "admin-appearance",
+  "description": "A section container with scroll-triggered animations for nested content.",
+  "example": {},
+  "attributes": {
+    "animationType": {
+      "type": "string",
+      "default": "fadeIn"
+    },
+    "animationDuration": {
+      "type": "string",
+      "default": "0.8s"
+    },
+    "animationTimingFunction": {
+      "type": "string",
+      "default": "ease-out"
+    },
+    "animationDelay": {
+      "type": "string",
+      "default": "0s"
+    },
+    "animationIterationCount": {
+      "type": "string",
+      "default": "1"
+    },
+    "animationDirection": {
+      "type": "string",
+      "default": "normal"
+    },
+    "animationFillMode": {
+      "type": "string",
+      "default": "forwards"
+    },
+    "animationPlayState": {
+      "type": "string",
+      "default": "running"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "textdomain": "animated-section",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll(".wp-block-telex-animated-section");if(!e.length)return;const t=new IntersectionObserver(function(e){e.forEach(function(e){e.isIntersecting&&(e.target.classList.add("is-visible"),t.unobserve(e.target))})},{root:null,rootMargin:"0px",threshold:.1});e.forEach(function(e){t.observe(e)})});

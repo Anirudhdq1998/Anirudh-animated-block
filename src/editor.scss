@@ -1,0 +1,24 @@
+
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-telex-animated-section {
+	min-height: 100px;
+	padding: 20px;
+	border: 2px dashed #ddd;
+	border-radius: 4px;
+	opacity: 1 !important;
+	transform: none !important;
+
+	&::before {
+		content: "Animated Section";
+		display: block;
+		font-size: 12px;
+		color: #999;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+}
